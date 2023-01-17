@@ -17,16 +17,17 @@ body {
   margin: 0;
 
   font-family: Roboto, sans-serif;
-  color: var(--grey);
+  color: $grey;
   line-height: 1.5;
 
-  background: var(--black);
+  background: $black;
 }
 
 
 p,
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
 }
 
@@ -34,24 +35,36 @@ h2 {
   max-width: 1200px;
 }
 
+.mt-200 {
+  margin-top: 200px;
+}
+
 .mt-100 {
   margin-top: 100px;
 }
 
-.mt-48 {
-  margin-top: 48px;
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-40 {
+  margin-top: 40px;
 }
 
 .mt-30 {
   margin-top: 30px;
 }
 
+.mt-17 {
+  margin-top: 17px;
+}
+
 .mr-24 {
   margin-right: 24px;
 }
 
-.mt-17 {
-  margin-top: 17px;
+.mr-16 {
+  margin-right: 16px;
 }
 
 .m-c {
@@ -70,7 +83,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 
-  color: var(--white);
+  color: $white;
 }
 
 .h2 {
@@ -81,7 +94,16 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 
-  color: var(--white);
+  color: $white;
+}
+
+.subheader {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: capitalize;
+
+  color: $white;
 }
 
 .base-text {
@@ -90,7 +112,7 @@ h2 {
   font-size: 16px;
   line-height: 150%;
 
-  color: var(--white);
+  color: $white;
 }
 
 .menu-text {
@@ -108,7 +130,7 @@ h2 {
 
 
 .btn {
-  padding: 0;
+  width: 100%;
 
   border-radius: 5px;
 
@@ -117,7 +139,7 @@ h2 {
   font-size: 13.3px;
   line-height: 15px;
   text-transform: uppercase;
-  color: var(--white);
+  color: $white;
 
   cursor: pointer;
 }
@@ -131,8 +153,5 @@ h2 {
   border: 0px;
 
   background: #34C176;
+  cursor: pointer;
 }
-
-// .pd-btn {
-//   padding: 21px 0;
-// }

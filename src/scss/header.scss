@@ -78,7 +78,7 @@ header {
       margin-bottom: 1.5rem;
 
       background: transparent;
-      border: 2px solid var(--light-grey);
+      border: 2px solid $light-grey;
       border-radius: 3px;
 
 
@@ -86,7 +86,7 @@ header {
       font-size: 14px;
       line-height: 16px;
 
-      color: var(--white);
+      color: $white;
     }
   }
 }

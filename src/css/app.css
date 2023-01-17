@@ -1,15 +1,3 @@
-:root {
-  --white: #FFF;
-  --black: #08020D;
-  --light-grey: #E0E0E0;
-  --grey: #CACACA;
-  --dark-grey: #3C3B3D;
-  --green: #34C176;
-  --orange: #F89202;
-  --violet: #5328A1;
-  --brown: #95390C;
-}
-
 @font-face {
   font-family: Roboto, sans-serif;
   src: url("../fonts/Roboto-Bold.ttf");
@@ -25,14 +13,15 @@
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
-  color: var(--grey);
+  color: #CACACA;
   line-height: 1.5;
-  background: var(--black);
+  background: #08020D;
 }
 
 p,
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
 }
 
@@ -40,24 +29,36 @@ h2 {
   max-width: 1200px;
 }
 
+.mt-200 {
+  margin-top: 200px;
+}
+
 .mt-100 {
   margin-top: 100px;
 }
 
-.mt-48 {
-  margin-top: 48px;
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-40 {
+  margin-top: 40px;
 }
 
 .mt-30 {
   margin-top: 30px;
 }
 
+.mt-17 {
+  margin-top: 17px;
+}
+
 .mr-24 {
   margin-right: 24px;
 }
 
-.mt-17 {
-  margin-top: 17px;
+.mr-16 {
+  margin-right: 16px;
 }
 
 .m-c {
@@ -74,7 +75,7 @@ h2 {
   line-height: 90px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--white);
+  color: #FFF;
 }
 
 .h2 {
@@ -84,7 +85,15 @@ h2 {
   line-height: 57px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--white);
+  color: #FFF;
+}
+
+.subheader {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: capitalize;
+  color: #FFF;
 }
 
 .base-text {
@@ -92,7 +101,7 @@ h2 {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: var(--white);
+  color: #FFF;
 }
 
 .menu-text {
@@ -109,14 +118,14 @@ h2 {
 }
 
 .btn {
-  padding: 0;
+  width: 100%;
   border-radius: 5px;
   font-style: normal;
   font-weight: 400;
   font-size: 13.3px;
   line-height: 15px;
   text-transform: uppercase;
-  color: var(--white);
+  color: #FFF;
   cursor: pointer;
 }
 
@@ -126,6 +135,7 @@ h2 {
   height: 57px;
   border: 0px;
   background: #34C176;
+  cursor: pointer;
 }
 
 .baner-container {
@@ -189,12 +199,12 @@ header .search-bar {
   padding: 16px 0 18px 20px;
   margin-bottom: 1.5rem;
   background: transparent;
-  border: 2px solid var(--light-grey);
+  border: 2px solid #E0E0E0;
   border-radius: 3px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: var(--white);
+  color: #FFF;
 }
 
 @media (max-width: 414px) {
@@ -240,5 +250,81 @@ header .search-bar {
   }
   .first-screen .btn-green {
     width: 100%;
+  }
+}
+.subscribe-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 50px;
+}
+
+.bg-free {
+  background-image: url("..//images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-standart {
+  background-image: url("..//images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url("..//images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-subscribe {
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+}
+.card-subscribe .card-name {
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+}
+.card-subscribe .price-card {
+  display: flex;
+  justify-content: center;
+}
+.card-subscribe .price-card .price {
+  font-size: 64px;
+  line-height: 1em;
+  color: #FFF;
+}
+.card-subscribe .price-card .price-value {
+  font-size: 32px;
+  color: #FFF;
+}
+.card-subscribe .btn-container {
+  width: 100%;
+}
+.card-subscribe .btn-container .btn-subscribe {
+  height: 66px;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+}
+.card-subscribe .card-disclaimer {
+  padding: 64px 0;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFF;
+}
+
+@media (max-width: 414px) {
+  .subscribe-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .card-subscribe .card-name {
+    padding-top: 16px;
+    font-size: 16px;
   }
 }

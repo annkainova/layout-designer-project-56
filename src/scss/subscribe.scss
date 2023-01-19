@@ -1,6 +1,6 @@
 .subscribe-container {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
 }
 
@@ -62,8 +62,6 @@
 
     .btn-subscribe {
       height: 66px;
-      border: 1px solid #FFFFFF;
-      background: transparent;
     }
   }
 

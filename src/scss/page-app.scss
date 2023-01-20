@@ -1,0 +1,48 @@
+.app-base {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+  .app-text {
+    margin-top: 14px;
+  }
+
+  .app-img {
+    justify-self: center;
+  }
+
+  .btn-app {
+    box-sizing: border-box;
+
+    width: 131px;
+    height: 53px;
+
+    padding-top: 16px;
+
+    background-color: $brown;
+    border-radius: 32px;
+    border: none;
+
+    font-size: 12.8px;
+    text-transform: none;
+    color: $white;
+  }
+}
+
+@media (max-width:414px) {
+  .app-base {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .app-text {
+      grid-row: 2;
+
+      margin-top: 16px;
+    }
+
+
+    .btn-app {
+      margin-top: 15px;
+    }
+  }
+}

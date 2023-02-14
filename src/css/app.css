@@ -21,17 +21,33 @@ body {
 p,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
 a {
   display: block;
   text-decoration: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+a :active {
+  color: inherit;
 }
 
-.wd {
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.container {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .pt-100 {
@@ -68,6 +84,10 @@ a {
 
 .mt-16 {
   margin-top: 16px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .mr-50 {
@@ -132,6 +152,13 @@ a {
   }
 }
 
+.h4 {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
 .base-text {
   font-style: normal;
   font-weight: 400;
@@ -183,7 +210,6 @@ a {
 
 header {
   display: grid;
-  grid-template-columns: -webkit-max-content -webkit-max-content auto;
   grid-template-columns: max-content max-content auto;
   margin: 0 auto;
   padding-top: 25px;
@@ -437,6 +463,9 @@ header .search-bar {
 }
 
 @media (max-width: 414px) {
+  .footer {
+    padding: 0 20px;
+  }
   .app-base {
     display: grid;
     grid-template-columns: 1fr;
@@ -447,5 +476,70 @@ header .search-bar {
   }
   .app-base .btn-app {
     margin-top: 15px;
+  }
+}
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list li a {
+  color: #E0E0E0;
+}
+
+.nav-link {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin-top: 19px;
+}
+
+.nav-icon {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+
+.google {
+  background-size: auto;
+  background-image: url("..//images/Google+.png");
+}
+
+.twitter {
+  background-image: url("..//images/Twitter.png");
+}
+
+.footer__menu {
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.footer__line {
+  margin-top: 72px;
+  margin-bottom: 40px;
+  height: 2px;
+  background-color: #CACACA;
+}
+
+@media (max-width: 414px) {
+  .nav-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 30px;
+  }
+  .footer__menu {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, min-content);
+    row-gap: 16px;
   }
 }

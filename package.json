@@ -1,5 +1,14 @@
 {
+  "scripts": {
+  "stylelint": "stylelint '**/*{.css,.scss}'",
+  "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix"
+}
   "dependencies": {
+    "stylelint-order": "^6.0.2",
     "surge": "^0.23.1"
+  },
+  "devDependencies": {
+    "stylelint": "^15.1.0",
+    "stylelint-config-standard-scss": "^7.0.1"
   }
 }

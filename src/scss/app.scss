@@ -1,8 +1,13 @@
-@import 'variables.scss';
-@import 'general.scss';
+@import "variables.scss";
+@import "general.scss";
 
-@import 'header.scss';
-@import 'subscribe.scss';
-@import 'news.scss';
-@import 'page-app.scss';
-@import 'footer.scss';
+@import "header.scss";
+@import "subscribe.scss";
+@import "news.scss";
+@import "page-app.scss";
+@import "footer.scss";
+
+@import "artist-description.scss";
+@import "popular-track.scss";
+@import "discography.scss";
+@import "similar-artist.scss";

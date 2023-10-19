@@ -28,7 +28,8 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 
@@ -123,7 +124,6 @@ ul {
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
-  text-align: center;
   text-transform: uppercase;
 
   color: $white;
@@ -138,7 +138,6 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
-  text-align: center;
   text-transform: uppercase;
 
   color: $white;
@@ -170,6 +169,12 @@ ul {
   color: $white;
 }
 
+.h5 {
+  font-weight: 700;
+  font-size: 12.8px;
+  line-height: 150%;
+}
+
 .base-text {
   font-style: normal;
   font-weight: 400;
@@ -179,13 +184,8 @@ ul {
   color: $white;
 }
 
-.menu-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 16px;
-  text-transform: uppercase;
-}
+
+
 
 .flx {
   display: flex;
@@ -212,11 +212,52 @@ ul {
 .btn-green {
   display: block;
 
-  width: 570px;
+  max-width: 570px;
   height: 57px;
 
   border: 0px;
 
   background: $green;
+
   cursor: pointer;
+
+  &:active {
+    background: #239b5b;
+  }
+
+}
+
+.btn-violet {
+  display: block;
+
+  width: 220px;
+  height: 62px;
+
+  border: 0px;
+
+  background: $violet;
+
+  cursor: pointer;
+
+  &:active {
+    background: #36186d;
+  }
+}
+
+.btn-brown {
+  display: block;
+
+  width: 220px;
+  height: 62px;
+
+  border: 0px;
+
+  background: $brown;
+
+  cursor: pointer;
+
+
+  &:active {
+    background: #712b08;
+  }
 }

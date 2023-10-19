@@ -1,0 +1,23 @@
+.baner-container-artist {
+  background-image: url("..//images/Morten Harket.png");
+}
+
+.btn__artist {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+}
+
+.first-screen-artist {
+  padding: 200px 0;
+}
+
+@media (max-width: 414px) {
+  .first-screen-artist {
+    padding: 55px 0 200px 0;
+  }
+  .btn__artist {
+    display: flex;
+    flex-direction: column;
+  }
+}

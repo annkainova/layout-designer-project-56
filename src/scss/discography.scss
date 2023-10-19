@@ -1,0 +1,48 @@
+.discography {
+  display: flex;
+  // grid-template-columns: repeat(4, max-content);
+  gap: 25px 50px;
+  flex-wrap: wrap;
+}
+
+
+.album {
+  max-width: 250px;
+
+  &__img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  &__info {
+    margin-top: 18px;
+  }
+
+  &__name {
+    text-transform: none;
+  }
+
+  &__year {
+    color: $light-grey;
+  }
+}
+
+
+
+
+
+@media (max-width:414px) {
+  // .discography {
+  //   grid-template-columns: repeat(2, max-content);
+  // }
+
+
+  .album {
+    max-width: 137px;
+
+    &__img {
+      max-width: 137px;
+      max-height: 137px;
+    }
+  }
+}

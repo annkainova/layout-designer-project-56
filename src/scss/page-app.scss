@@ -1,17 +1,12 @@
-.app-base {
+.app {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-
-  .app-text {
+  &__text {
     margin-top: 14px;
   }
 
-  .app-img {
-    justify-self: center;
-  }
-
-  .btn-app {
+  &__btn {
     box-sizing: border-box;
 
     width: 131px;
@@ -27,25 +22,27 @@
     text-transform: none;
     color: $white;
   }
+
+  &__img {
+    justify-self: center;
+  }
 }
 
-@media (max-width:414px) {
-  .footer {
-    padding: 0 20px;
-  }
 
-  .app-base {
+
+
+@media (max-width:414px) {
+  .app {
     display: grid;
     grid-template-columns: 1fr;
 
-    .app-text {
+    &__text {
       grid-row: 2;
 
       margin-top: 16px;
     }
 
-
-    .btn-app {
+    &__btn {
       margin-top: 15px;
     }
   }

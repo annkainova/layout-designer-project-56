@@ -1,0 +1,30 @@
+.popular-track__group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-track {
+  display: grid;
+  grid-template-columns: max-content max-content auto;
+  align-items: center;
+  max-width: 50%;
+}
+.popular-track__image {
+  width: 55px;
+  height: 55px;
+}
+.popular-track__music-info {
+  margin-left: 15px;
+}
+.popular-track__artict-name {
+  font-size: 12.8px;
+  text-transform: uppercase;
+}
+.popular-track__music-name {
+  font-size: 12.8px;
+}
+.popular-track__time {
+  display: block;
+  justify-self: end;
+  font-size: 12.8px;
+}

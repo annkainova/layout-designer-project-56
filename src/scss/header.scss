@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .baner-container {
   background-image: url("..//images/banner.png");
   // background-repeat: no-repeat;
@@ -35,6 +37,11 @@
     }
   }
 
+
+  &__active {
+    color: $white;
+  }
+
   &__form {
     display: flex;
     align-items: center;
@@ -68,6 +75,7 @@
       outline: none;
     }
   }
+
 }
 
 .logo {
@@ -81,6 +89,7 @@
   }
 
   &__text {
+    line-height: 0;
     font-weight: 400;
     font-size: 11px;
     text-transform: uppercase;

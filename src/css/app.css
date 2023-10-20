@@ -44,6 +44,8 @@ li {
 ul {
   margin-left: 0;
   padding-left: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 .container {
@@ -234,6 +236,9 @@ ul {
 .menu__text:hover {
   color: #fff;
 }
+.menu__active {
+  color: #fff;
+}
 .menu__form {
   display: flex;
   align-items: center;
@@ -269,6 +274,7 @@ ul {
   margin-right: 16px;
 }
 .logo__text {
+  line-height: 0;
   font-weight: 400;
   font-size: 11px;
   text-transform: uppercase;
@@ -551,7 +557,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 270px);
   gap: 30px;
-  padding: 3rem 0;
+  padding: 62px 0 72px 0;
 }
 
 .nav-link {
@@ -580,12 +586,16 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  padding: 2rem 0;
+  padding: 39px 0 49px 0;
 }
 
 .footer__line {
   height: 2px;
   background-color: #cacaca;
+}
+
+.nav__list {
+  margin-top: 16px;
 }
 
 @media (max-width: 768px) {

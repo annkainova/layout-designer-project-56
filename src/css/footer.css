@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: repeat(4, 270px);
   gap: 30px;
-  padding: 3rem 0;
+  padding: 62px 0 72px 0;
 }
 
 .nav-link {
@@ -41,12 +41,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  padding: 2rem 0;
+  padding: 39px 0 49px 0;
 }
 
 .footer__line {
   height: 2px;
   background-color: #cacaca;
+}
+
+.nav__list {
+  margin-top: 16px;
 }
 
 @media (max-width: 768px) {

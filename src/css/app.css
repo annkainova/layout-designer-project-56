@@ -600,25 +600,24 @@ ul {
     row-gap: 30px;
   }
 }
-.nav-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, min-content);
-  row-gap: 30px;
+@media (max-width: 414px) {
+  .nav-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 30px;
+  }
+  .footer__menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, min-content);
+    row-gap: 16px;
+  }
+  .footer__line {
+    height: 2px;
+    background-color: #cacaca;
+  }
 }
-
-.footer__menu {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, min-content);
-  row-gap: 16px;
-}
-
-.footer__line {
-  height: 2px;
-  background-color: #cacaca;
-}
-
 .baner-container-artist {
   background-image: url("..//images/Morten Harket.png");
 }

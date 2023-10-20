@@ -1,13 +1,19 @@
-.popular-track__group {
+.popular-track-screen__group {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 25px 50px;
+}
+
+.popular-track-screen__column {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .popular-track {
-  display: grid;
-  grid-template-columns: max-content max-content auto;
+  display: flex;
   align-items: center;
-  max-width: 50%;
+  justify-content: space-between;
 }
 .popular-track__image {
   width: 55px;
@@ -19,12 +25,21 @@
 .popular-track__artict-name {
   font-size: 12.8px;
   text-transform: uppercase;
+  color: #fff;
 }
 .popular-track__music-name {
   font-size: 12.8px;
+  color: #e0e0e0;
 }
 .popular-track__time {
-  display: block;
   justify-self: end;
   font-size: 12.8px;
+  color: #e0e0e0;
+}
+
+@media (max-width: 414px) {
+  .popular-track-screen__group {
+    grid-template-columns: auto;
+    gap: 25px;
+  }
 }

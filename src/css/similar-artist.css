@@ -1,10 +1,37 @@
+.similar-artist {
+  display: flex;
+  gap: 25px 50px;
+  flex-wrap: wrap;
+}
+
 .similar-item {
-  margin-top: 17px;
   max-width: 250px;
   text-align: center;
 }
 .similar-item__img {
-  width: 250px;
-  height: 250px;
+  max-width: 250px;
+  max-height: 250px;
   border-radius: 100%;
+}
+.similar-item__info {
+  margin-top: 17px;
+}
+.similar-item__name {
+  text-transform: none;
+}
+.similar-item__fans {
+  color: #e0e0e0;
+}
+
+@media (max-width: 414px) {
+  .similar-artist {
+    grid-template-columns: repeat(2, max-content);
+  }
+  .similar-item {
+    max-width: 137px;
+  }
+  .similar-item__img {
+    max-width: 137px;
+    max-height: 137px;
+  }
 }

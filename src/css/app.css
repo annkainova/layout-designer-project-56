@@ -202,30 +202,6 @@ ul {
   background: #239b5b;
 }
 
-.btn-violet {
-  display: block;
-  width: 220px;
-  height: 62px;
-  border: 0px;
-  background: #5328a1;
-  cursor: pointer;
-}
-.btn-violet:active {
-  background: #36186d;
-}
-
-.btn-brown {
-  display: block;
-  width: 220px;
-  height: 62px;
-  border: 0px;
-  background: #95390c;
-  cursor: pointer;
-}
-.btn-brown:active {
-  background: #712b08;
-}
-
 .baner-container {
   background-image: url("..//images/banner.png");
   background-position: center;
@@ -457,9 +433,6 @@ ul {
     display: grid;
     grid-template-columns: auto;
   }
-  .subscribe__price {
-    margin-top: 50px;
-  }
   .subscribe__disclaimer {
     padding: 25px 0;
   }
@@ -502,6 +475,9 @@ ul {
 @media (max-width: 414px) {
   .news {
     display: block;
+  }
+  .news__body {
+    margin-top: 50px;
   }
   .news .news__text {
     margin-top: 16px;
@@ -563,8 +539,6 @@ ul {
 }
 .footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-  padding-bottom: 2rem;
-  padding-top: 3rem;
 }
 .footer a {
   color: #e0e0e0;
@@ -574,8 +548,10 @@ ul {
 }
 
 .nav-wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
+  padding: 3rem 0;
 }
 
 .nav-link {
@@ -604,11 +580,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  padding: 2rem 0;
 }
 
 .footer__line {
-  margin-top: 72px;
-  margin-bottom: 40px;
   height: 2px;
   background-color: #cacaca;
 }
@@ -647,6 +622,41 @@ ul {
   background-image: url("..//images/Morten Harket.png");
 }
 
+.btn-violet {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 220px;
+  height: 62px;
+  padding: 21px 31px;
+  border: 0px;
+  background: #5328a1;
+  cursor: pointer;
+}
+.btn-violet:active {
+  background: #36186d;
+}
+
+.btn-brown {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 220px;
+  height: 62px;
+  padding: 21px 31px;
+  border: 0px;
+  background: #95390c;
+  cursor: pointer;
+}
+.btn-brown:active {
+  background: #712b08;
+}
+
+.btn-image {
+  width: 20px;
+  height: 20px;
+}
+
 .btn__artist {
   display: flex;
   justify-content: start;
@@ -680,6 +690,7 @@ ul {
 
 .popular-track {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .popular-track__image {
@@ -768,6 +779,9 @@ ul {
 }
 
 @media (max-width: 414px) {
+  .similar-artist {
+    grid-template-columns: repeat(2, max-content);
+  }
   .similar-item {
     max-width: 137px;
   }

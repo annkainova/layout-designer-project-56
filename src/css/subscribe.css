@@ -1,56 +1,43 @@
-@import "variables.scss";
-
 .subscribe {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
-
-  &__card {
-    padding: 0 1.5rem;
-
-    border-radius: 1rem;
-  }
-
-  &__name {
-    padding-top: 24px;
-
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $white;
-  }
-
-  &__price {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__disclaimer {
-    padding: 64px 0;
-
-    font-weight: 400;
-    font-size: 12.8px;
-    line-height: 150%;
-    text-align: center;
-    color: $white;
-  }
+}
+.subscribe__card {
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+}
+.subscribe__name {
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.subscribe__price {
+  display: flex;
+  justify-content: center;
+}
+.subscribe__disclaimer {
+  padding: 64px 0;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
 }
 
 .price {
   font-size: 64px;
   line-height: 1em;
-
-  color: $white;
+  color: #fff;
 }
-
 
 .value {
   font-size: 32px;
-
-  color: $white;
+  color: #fff;
 }
-
 
 .bg-free {
   background-image: url("..//images/subscribe_1.png");
@@ -70,39 +57,28 @@
   background-size: cover;
 }
 
-
 .btn-container {
   width: 100%;
-
-  .subscribe__btn {
-    height: 66px;
-  }
 }
-
-
+.btn-container .subscribe__btn {
+  height: 66px;
+}
 
 @media (max-width: 414px) {
   .subscribe-container {
     display: grid;
     grid-template-columns: auto;
   }
-
-
-  .card-subscribe {
-    .card-name {
-      padding-top: 16px;
-
-      font-size: 16px;
-    }
+  .card-subscribe .card-name {
+    padding-top: 16px;
+    font-size: 16px;
   }
 }
-
 @media (max-width: 768px) {
   .subscribe {
     display: grid;
     grid-template-columns: auto;
   }
-
   .subscribe__disclaimer {
     padding: 25px 0;
   }

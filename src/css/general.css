@@ -1,30 +1,22 @@
-@import "variables.scss";
-
 @font-face {
   font-family: Roboto, sans-serif;
-  src: url('../fonts/Roboto-Bold.ttf');
+  src: url("../fonts/Roboto-Bold.ttf");
 }
-
 @font-face {
   font-family: Roboto, sans-serif;
-  src: url('../fonts/Roboto-Medium.ttf');
+  src: url("../fonts/Roboto-Medium.ttf");
 }
-
 @font-face {
   font-family: Roboto, sans-serif;
-  src: url('../fonts/Roboto-Regular.ttf');
+  src: url("../fonts/Roboto-Regular.ttf");
 }
-
 body {
   margin: 0;
-
   font-family: Roboto, sans-serif;
-  color: $grey;
+  color: #cacaca;
   line-height: 1.5;
-
-  background: $black;
+  background: #08020d;
 }
-
 
 p,
 h1,
@@ -39,12 +31,10 @@ a {
   display: block;
   text-decoration: none;
   color: #FFFFFF;
-
   cursor: pointer;
-
-  :active {
-    color: inherit;
-  }
+}
+a :active {
+  color: inherit;
 }
 
 li {
@@ -119,7 +109,6 @@ ul {
 
 .center {
   text-align: center;
-
 }
 
 .h1 {
@@ -127,10 +116,10 @@ ul {
   font-size: 60px;
   line-height: 90px;
   text-transform: uppercase;
-
-  color: $white;
-
-  @media (max-width:414px) {
+  color: #fff;
+}
+@media (max-width: 414px) {
+  .h1 {
     font-size: 30px;
     line-height: 45px;
   }
@@ -141,25 +130,23 @@ ul {
   font-weight: 700;
   font-size: 38px;
   text-transform: uppercase;
-
-  color: $white;
-
-  @media (max-width:414px) {
+  color: #fff;
+}
+@media (max-width: 414px) {
+  .h2 {
     font-size: 18px;
   }
 }
-
-
 
 .h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   text-transform: capitalize;
-
-  color: $white;
-
-  @media (max-width:414px) {
+  color: #fff;
+}
+@media (max-width: 414px) {
+  .h3 {
     font-size: 16px;
   }
 }
@@ -168,7 +155,7 @@ ul {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  color: $white;
+  color: #fff;
 }
 
 .h5 {
@@ -182,84 +169,35 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-
-  color: $white;
+  color: #fff;
 }
-
-
-
 
 .flx {
   display: flex;
   align-items: center;
 }
 
-
 .btn {
   width: 100%;
-
   border-radius: 5px;
   border: 1px solid #FFFFFF;
   background: transparent;
-
   font-style: normal;
   font-weight: 400;
   font-size: 13.3px;
   text-transform: uppercase;
-  color: $white;
-
+  color: #fff;
   cursor: pointer;
 }
 
 .btn-green {
   display: block;
-
   max-width: 570px;
   height: 57px;
-
   border: 0px;
-
-  background: $green;
-
+  background: #34c176;
   cursor: pointer;
-
-  &:active {
-    background: #239b5b;
-  }
-
 }
-
-// .btn-violet {
-//   display: block;
-
-//   width: 220px;
-//   height: 62px;
-
-//   border: 0px;
-
-//   background: $violet;
-
-//   cursor: pointer;
-
-//   &:active {
-//     background: #36186d;
-//   }
-// }
-
-// .btn-brown {
-//   display: block;
-
-//   width: 220px;
-//   height: 62px;
-
-//   border: 0px;
-
-//   background: $brown;
-
-//   cursor: pointer;
-
-
-//   &:active {
-//     background: #712b08;
-//   }
-// }
+.btn-green:active {
+  background: #239b5b;
+}

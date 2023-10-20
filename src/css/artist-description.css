@@ -2,6 +2,41 @@
   background-image: url("..//images/Morten Harket.png");
 }
 
+.btn-violet {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 220px;
+  height: 62px;
+  padding: 21px 31px;
+  border: 0px;
+  background: #5328a1;
+  cursor: pointer;
+}
+.btn-violet:active {
+  background: #36186d;
+}
+
+.btn-brown {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 220px;
+  height: 62px;
+  padding: 21px 31px;
+  border: 0px;
+  background: #95390c;
+  cursor: pointer;
+}
+.btn-brown:active {
+  background: #712b08;
+}
+
+.btn-image {
+  width: 20px;
+  height: 20px;
+}
+
 .btn__artist {
   display: flex;
   justify-content: start;

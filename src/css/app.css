@@ -279,9 +279,6 @@ ul {
 }
 
 @media (max-width: 414px) {
-  section {
-    padding: 0 20px;
-  }
   .header {
     display: block;
   }
@@ -340,7 +337,7 @@ ul {
 
 @media (max-width: 414px) {
   .first-screen {
-    padding: 78px 0 200px 0;
+    padding: 75px 0 200px 0;
   }
   .first-screen__form {
     display: flex;
@@ -436,15 +433,14 @@ ul {
     display: grid;
     grid-template-columns: auto;
   }
-  .subscribe__disclaimer {
-    padding: 25px 0;
-  }
 }
 .news {
   display: flex;
   justify-content: space-between;
 }
 .news__img {
+  box-sizing: border-box;
+  vertical-align: middle;
   max-width: 570px;
 }
 .news__text {
@@ -455,7 +451,7 @@ ul {
 }
 .news__author {
   font-size: 12px;
-  color: #f89202;
+  color: #F89202;
   text-transform: uppercase;
 }
 .news__data {
@@ -486,6 +482,7 @@ ul {
     margin-top: 16px;
   }
   .news .news__img {
+    box-sizing: border-box;
     margin: 0;
     width: 100%;
   }
@@ -506,10 +503,10 @@ ul {
 }
 .app {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 600px auto;
 }
 .app__text {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 .app__btn {
   box-sizing: border-box;
@@ -583,7 +580,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  padding: 39px 0 49px 0;
+  padding: 39px 20px 49px 20px;
 }
 
 .footer__line {
@@ -596,10 +593,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .nav-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -607,24 +600,25 @@ ul {
     row-gap: 30px;
   }
 }
-@media (max-width: 414px) {
-  .footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .nav-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, min-content);
-    row-gap: 30px;
-  }
-  .footer__menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, min-content);
-    row-gap: 16px;
-  }
+.nav-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 30px;
 }
+
+.footer__menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, min-content);
+  row-gap: 16px;
+}
+
+.footer__line {
+  height: 2px;
+  background-color: #cacaca;
+}
+
 .baner-container-artist {
   background-image: url("..//images/Morten Harket.png");
 }
@@ -637,7 +631,7 @@ ul {
   height: 62px;
   padding: 21px 31px;
   border: 0px;
-  background: #5328a1;
+  background: #5328A1;
   cursor: pointer;
 }
 .btn-violet:active {
@@ -671,7 +665,7 @@ ul {
 }
 
 .first-screen-artist {
-  padding: 200px 0;
+  padding: 200px 0 220px 0;
 }
 
 .first-screen-text {
@@ -681,7 +675,7 @@ ul {
 
 @media (max-width: 414px) {
   .first-screen-artist {
-    padding: 55px 0 200px 0;
+    padding: 55px 0 220px 0;
   }
   .btn__artist {
     display: flex;

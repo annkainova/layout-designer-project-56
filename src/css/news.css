@@ -3,6 +3,8 @@
   justify-content: space-between;
 }
 .news__img {
+  box-sizing: border-box;
+  vertical-align: middle;
   max-width: 570px;
 }
 .news__text {
@@ -13,7 +15,7 @@
 }
 .news__author {
   font-size: 12px;
-  color: #f89202;
+  color: #F89202;
   text-transform: uppercase;
 }
 .news__data {
@@ -44,6 +46,7 @@
     margin-top: 16px;
   }
   .news .news__img {
+    box-sizing: border-box;
     margin: 0;
     width: 100%;
   }

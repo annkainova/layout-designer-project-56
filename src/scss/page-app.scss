@@ -1,9 +1,10 @@
 .app {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 600px auto;
 
   &__text {
-    margin-top: 14px;
+    margin-top: 16px;
+
   }
 
   &__btn {

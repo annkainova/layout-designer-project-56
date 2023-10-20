@@ -227,7 +227,7 @@ ul {
   align-items: center;
 }
 .menu__text {
-  font-weight: 700;
+  font-weight: 0;
   font-size: 11px;
   line-height: 16px;
   text-transform: uppercase;
@@ -242,12 +242,10 @@ ul {
 .menu__form {
   display: flex;
   align-items: center;
-  width: 248px;
 }
 .menu__input {
-  display: block;
   box-sizing: border-box;
-  width: 100%;
+  width: 248px;
   height: 25px;
   background: #3C3B3D;
   border: none;
@@ -296,10 +294,9 @@ ul {
   }
   .header .menu__form {
     margin-top: 18px;
-    max-width: auto;
+    max-width: 100%;
   }
   .header .menu__input {
-    display: block;
     width: 100%;
   }
 }
@@ -675,6 +672,11 @@ ul {
 
 .first-screen-artist {
   padding: 200px 0;
+}
+
+.first-screen-text {
+  font-weight: 400;
+  margin-top: 16px;
 }
 
 @media (max-width: 414px) {

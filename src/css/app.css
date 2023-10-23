@@ -360,6 +360,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
+  margin-top: 45px;
 }
 .subscribe__card {
   padding: 0 1.5rem;
@@ -372,6 +373,11 @@ ul {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+}
+@media (max-width: 414px) {
+  .subscribe__name {
+    font-size: 16px;
+  }
 }
 .subscribe__price {
   display: flex;

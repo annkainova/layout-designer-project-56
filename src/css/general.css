@@ -50,7 +50,7 @@ ul {
 
 @media (min-width: 1240px) {
   .container {
-    max-width: 1240px;
+    max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
   }

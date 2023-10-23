@@ -32,7 +32,13 @@
 }
 
 .img-r {
+  margin-top: 65px;
   flex-direction: row-reverse;
+}
+@media (max-width: 414px) {
+  .img-r {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 414px) {

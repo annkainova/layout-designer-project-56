@@ -74,6 +74,7 @@
   .subscribe-container {
     display: grid;
     grid-template-columns: auto;
+    grid-row-gap: 50px;
   }
   .card-subscribe .card-name {
     padding-top: 16px;

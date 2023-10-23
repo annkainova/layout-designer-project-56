@@ -25,7 +25,13 @@
   }
 
   &__img {
-    justify-self: center;
+    margin-left: 144px;
+    justify-self: left;
+
+    @media (max-width:414px) {
+      margin-left: 0px;
+      justify-self: center;
+    }
   }
 }
 

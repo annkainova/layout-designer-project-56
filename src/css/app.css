@@ -432,6 +432,7 @@ ul {
   .subscribe-container {
     display: grid;
     grid-template-columns: auto;
+    grid-row-gap: 50px;
   }
   .card-subscribe .card-name {
     padding-top: 16px;
@@ -478,7 +479,13 @@ ul {
 }
 
 .img-r {
+  margin-top: 65px;
   flex-direction: row-reverse;
+}
+@media (max-width: 414px) {
+  .img-r {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -531,7 +538,14 @@ ul {
   color: #fff;
 }
 .app__img {
-  justify-self: center;
+  margin-left: 144px;
+  justify-self: left;
+}
+@media (max-width: 414px) {
+  .app__img {
+    margin-left: 0px;
+    justify-self: center;
+  }
 }
 
 @media (max-width: 414px) {

@@ -1,0 +1,42 @@
+.app {
+  display: grid;
+  grid-template-columns: 600px auto;
+}
+@media (max-width: 414px) {
+  .app {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+  }
+}
+.app__text {
+  margin-top: 16px;
+}
+@media (max-width: 414px) {
+  .app__text {
+    grid-row: 2;
+    margin-top: 0px;
+  }
+}
+.app__btn {
+  box-sizing: border-box;
+  width: 131px;
+  height: 53px;
+  padding-top: 16px;
+  background-color: #95390c;
+  border-radius: 32px;
+  border: none;
+  font-size: 12.8px;
+  text-transform: none;
+  color: #fff;
+}
+.app__img {
+  margin-left: 144px;
+  justify-self: left;
+}
+@media (max-width: 414px) {
+  .app__img {
+    margin-left: 0px;
+    justify-self: center;
+  }
+}

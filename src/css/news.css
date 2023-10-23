@@ -29,6 +29,8 @@
   height: 53px;
   padding-top: 16px;
   text-align: center;
+  color: #cacaca;
+  border: 1px solid var(#cacaca);
 }
 
 .img-r {

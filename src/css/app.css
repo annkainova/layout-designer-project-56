@@ -1,18 +1,18 @@
 @font-face {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   src: url("../fonts/Roboto-Bold.ttf");
 }
 @font-face {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   src: url("../fonts/Roboto-Medium.ttf");
 }
 @font-face {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   src: url("../fonts/Roboto-Regular.ttf");
 }
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   color: #cacaca;
   line-height: 1.5;
   background: #08020d;
@@ -534,7 +534,6 @@ ul {
   .app {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 16px;
   }
 }
 .app__text {

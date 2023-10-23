@@ -385,8 +385,9 @@ ul {
 }
 @media (max-width: 414px) {
   .subscribe__name {
-    font-size: 16px;
     padding-top: 16px;
+    font-size: 16px;
+    font-weight: 700;
   }
 }
 .subscribe__price {
@@ -466,6 +467,7 @@ ul {
 }
 .news__text {
   margin-top: 30px;
+  font-weight: 400;
 }
 .news__footer {
   display: flex;
@@ -494,12 +496,6 @@ ul {
   margin-top: 65px;
   flex-direction: row-reverse;
 }
-@media (max-width: 414px) {
-  .img-r {
-    margin-top: 50px;
-  }
-}
-
 @media (max-width: 414px) {
   .news {
     display: block;

@@ -30,8 +30,7 @@
     padding: 64px 0;
 
     font-weight: 400;
-    font-size: 12.8px;
-    line-height: 150%;
+    font-size: 13px;
     text-align: center;
     color: $white;
   }
@@ -76,10 +75,13 @@
 
   .subscribe__btn {
     height: 66px;
+
+    font-size: 16px;
   }
 }
 
 
+.subscribe__disclaimer {}
 
 @media (max-width: 414px) {
   .subscribe-container {

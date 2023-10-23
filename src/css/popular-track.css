@@ -1,6 +1,6 @@
 .popular-track-screen__group {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 551px);
   gap: 25px 50px;
 }
 

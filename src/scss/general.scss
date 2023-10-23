@@ -61,8 +61,10 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  @media (min-width: 1240px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .pt-100 {

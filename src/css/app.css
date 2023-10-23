@@ -88,6 +88,10 @@ ul {
   margin-top: 25px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .mt-16 {
   margin-top: 16px;
 }
@@ -361,6 +365,11 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   margin-top: 45px;
+}
+@media (max-width: 414px) {
+  .subscribe {
+    margin-top: 50px;
+  }
 }
 .subscribe__card {
   padding: 0 1.5rem;

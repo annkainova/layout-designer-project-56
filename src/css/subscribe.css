@@ -4,6 +4,11 @@
   grid-gap: 50px;
   margin-top: 45px;
 }
+@media (max-width: 414px) {
+  .subscribe {
+    margin-top: 50px;
+  }
+}
 .subscribe__card {
   padding: 0 1.5rem;
   border-radius: 1rem;

@@ -55,18 +55,36 @@
   background-image: url("..//images/subscribe_1.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 414px) {
+  .bg-free .bg-free {
+    background-position: top center;
+  }
 }
 
 .bg-standart {
   background-image: url("..//images/subscribe_2.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 414px) {
+  .bg-standart .bg-free {
+    background-position: top center;
+  }
 }
 
 .bg-premium {
   background-image: url("..//images/subscribe_3.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 414px) {
+  .bg-premium .bg-free {
+    background-position: top center;
+  }
 }
 
 .btn-container {

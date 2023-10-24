@@ -1,3 +1,33 @@
-.discography__name {
+.discography {
+  display: flex;
+  gap: 25px 50px;
+  flex-wrap: wrap;
+}
+
+.album {
+  max-width: 250px;
+}
+.album__img {
+  max-width: 250px;
+  max-height: 250px;
+  vertical-align: middle;
+}
+.album__info {
+  margin-top: 18px;
+}
+.album__name {
   text-transform: none;
+}
+.album__year {
+  color: #e0e0e0;
+}
+
+@media all and (max-width: 414px) {
+  .album {
+    max-width: 137px;
+  }
+  .album__img {
+    max-width: 137px;
+    max-height: 137px;
+  }
 }

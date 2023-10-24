@@ -37,7 +37,7 @@
   color: #e0e0e0;
 }
 
-@media (max-width: 414px) {
+@media all and (max-width: 414px) {
   .popular-track-screen__group {
     grid-template-columns: auto;
     gap: 25px;

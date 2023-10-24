@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "variables";
 
 .subscribe {
   display: grid;
@@ -7,7 +7,7 @@
 
   margin-top: 45px;
 
-  @media (max-width: 414px) {
+  @media all and (max-width: 414px) {
     margin-top: 50px;
   }
 
@@ -26,8 +26,7 @@
     text-transform: uppercase;
     color: $white;
 
-
-    @media (max-width: 414px) {
+    @media all and (max-width: 414px) {
       padding-top: 14px;
 
       font-size: 16px;
@@ -57,13 +56,11 @@
   color: $white;
 }
 
-
 .value {
   font-size: 32px;
 
   color: $white;
 }
-
 
 .bg-free {
   background-image: url("..//images/subscribe_1.png");
@@ -71,7 +68,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: 414px) {
+  @media all and (max-width: 414px) {
     background-position: top center;
 
   }
@@ -83,7 +80,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: 414px) {
+  @media all and (max-width: 414px) {
     background-position: top center;
   }
 }
@@ -94,7 +91,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: 414px) {
+  @media all and (max-width: 414px) {
     background-position: top center;
   }
 }
@@ -109,10 +106,7 @@
   }
 }
 
-
-.subscribe__disclaimer {}
-
-@media (max-width: 414px) {
+@media all and (max-width: 414px) {
   .subscribe-container {
     display: grid;
     grid-template-columns: auto;
@@ -129,11 +123,9 @@
   }
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
   .subscribe {
     display: grid;
     grid-template-columns: auto;
   }
-
-  .subscribe__disclaimer {}
 }

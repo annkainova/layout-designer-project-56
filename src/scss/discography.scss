@@ -1,10 +1,10 @@
+@import "variables";
+
 .discography {
   display: flex;
-  // grid-template-columns: repeat(4, max-content);
   gap: 25px 50px;
   flex-wrap: wrap;
 }
-
 
 .album {
   max-width: 250px;
@@ -28,16 +28,7 @@
   }
 }
 
-
-
-
-
-@media (max-width:414px) {
-  // .discography {
-  //   grid-template-columns: repeat(2, max-content);
-  // }
-
-
+@media all and (max-width:414px) {
   .album {
     max-width: 137px;
 

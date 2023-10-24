@@ -1,13 +1,10 @@
-@import "variables.scss";
+@import "variables";
 
 .similar-artist {
   display: flex;
-  // grid-template-columns: repeat(4, max-content);
   gap: 25px 50px;
   flex-wrap: wrap;
 }
-
-
 
 .similar-item {
   max-width: 250px;
@@ -35,7 +32,7 @@
   }
 }
 
-@media (max-width:414px) {
+@media all and (max-width:414px) {
   .similar-artist {
     grid-template-columns: repeat(2, max-content);
   }

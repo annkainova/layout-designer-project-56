@@ -1,10 +1,8 @@
-@import "variables.scss";
+@import "variables";
 
 .baner-container-artist {
   background-image: url("..//images/Morten Harket.png");
 }
-
-.btn-title {}
 
 .btn-violet {
   display: flex;
@@ -23,7 +21,6 @@
   &:active {
     background: #36186d;
   }
-
 }
 
 .btn-brown {
@@ -52,8 +49,6 @@
   height: 20px;
 }
 
-.btn-brown {}
-
 .btn__artist {
   display: flex;
   justify-content: start;
@@ -61,7 +56,7 @@
 }
 
 .first-screen-artist {
-  padding: 200px 0 220px 0;
+  padding: 200px 0 220px;
 }
 
 .first-screen-text {
@@ -69,10 +64,9 @@
   margin-top: 16px;
 }
 
-@media (max-width:414px) {
+@media all and (max-width:414px) {
   .first-screen-artist {
-    padding: 55px 0 220px 0;
-
+    padding: 55px 0 220px;
   }
 
   .btn__artist {

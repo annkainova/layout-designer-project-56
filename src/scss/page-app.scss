@@ -1,10 +1,10 @@
-@import "variables.scss";
+@import "variables";
 
 .app {
   display: grid;
   grid-template-columns: 600px auto;
 
-  @media (max-width:414px) {
+  @media all and (max-width:414px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 15px
@@ -13,7 +13,7 @@
   &__text {
     margin-top: 16px;
 
-    @media (max-width:414px) {
+    @media all and (max-width:414px) {
       grid-row: 2;
       margin-top: 0px;
     }
@@ -35,7 +35,7 @@
     text-transform: none;
     color: $white;
 
-    @media (max-width:414px) {}
+    @media all and (max-width:414px) {}
   }
 
 
@@ -43,7 +43,7 @@
     margin-left: 144px;
     justify-self: left;
 
-    @media (max-width:414px) {
+    @media all and (max-width:414px) {
       margin-left: 0px;
       justify-self: center;
     }

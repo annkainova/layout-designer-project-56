@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "variables";
 
 @font-face {
   font-family: Roboto;
@@ -17,36 +17,30 @@
 
 body {
   margin: 0;
-
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
+  /* Добавил общее семейство шрифтов */
   color: $grey;
   line-height: 1.5;
-
   background: $black;
 }
-
 
 p,
 h1,
 h2,
 h3,
 h4,
-h5,
-{
-margin: 0;
-}
+h5
 
+/* Убрал лишнюю запятую */
+  {
+  margin: 0;
+}
 
 a {
   display: block;
   text-decoration: none;
-  color: #FFFFFF;
-
+  color: $white;
   cursor: pointer;
-
-  :active {
-    color: inherit;
-  }
 }
 
 li {
@@ -130,7 +124,6 @@ ul {
 
 .center {
   text-align: center;
-
 }
 
 .h1 {
@@ -138,10 +131,9 @@ ul {
   font-size: 60px;
   line-height: 90px;
   text-transform: uppercase;
-
   color: $white;
 
-  @media (max-width:414px) {
+  @media (max-width: 414px) {
     font-size: 30px;
     line-height: 45px;
   }
@@ -152,25 +144,21 @@ ul {
   font-weight: 700;
   font-size: 38px;
   text-transform: uppercase;
-
   color: $white;
 
-  @media (max-width:414px) {
+  @media (max-width: 414px) {
     font-size: 18px;
   }
 }
-
-
 
 .h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   text-transform: capitalize;
-
   color: $white;
 
-  @media (max-width:414px) {
+  @media (max-width: 414px) {
     font-size: 16px;
   }
 }
@@ -193,48 +181,37 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-
   color: $white;
 }
-
 
 .flx {
   display: flex;
   align-items: center;
 }
 
-
 .btn {
   width: 100%;
   box-sizing: border-box;
-
   border-radius: 5px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid $white;
   background: transparent;
-
   font-style: normal;
   font-weight: 400;
   font-size: 13.3px;
   text-transform: uppercase;
   color: $white;
-
   cursor: pointer;
 }
 
 .btn-green {
   display: block;
-
   max-width: 570px;
   height: 57px;
-
-  border: 0px;
-
+  border: 0;
   background: $green;
-
   cursor: pointer;
 
   &:active {
-    background: #239b5b;
+    background: $green;
   }
-
 }

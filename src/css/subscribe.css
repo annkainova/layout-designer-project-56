@@ -23,7 +23,7 @@
 }
 @media (max-width: 414px) {
   .subscribe__name {
-    padding-top: 16px;
+    padding-top: 14px;
     font-size: 16px;
     font-weight: 400;
   }
@@ -55,21 +55,18 @@
   background-image: url("..//images/subscribe_1.png");
   background-position: center;
   background-size: cover;
-  vertical-align: middle;
 }
 
 .bg-standart {
   background-image: url("..//images/subscribe_2.png");
   background-position: center;
   background-size: cover;
-  vertical-align: middle;
 }
 
 .bg-premium {
   background-image: url("..//images/subscribe_3.png");
   background-position: center;
   background-size: cover;
-  vertical-align: middle;
 }
 
 .btn-container {

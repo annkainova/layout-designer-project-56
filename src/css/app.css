@@ -387,7 +387,7 @@ ul {
   .subscribe__name {
     padding-top: 16px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
   }
 }
 .subscribe__price {
@@ -490,6 +490,11 @@ ul {
   text-align: center;
   color: #cacaca;
   border: 1px solid #cacaca;
+}
+@media (max-width: 414px) {
+  .news__btn {
+    margin-top: 45px;
+  }
 }
 
 .img-r {

@@ -46,6 +46,10 @@
 
     color: $grey;
     border: 1px solid $grey;
+
+    @media (max-width:414px) {
+      margin-top: 45px;
+    }
   }
 }
 

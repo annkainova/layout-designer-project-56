@@ -682,6 +682,7 @@ ul {
   gap: 16px;
   width: 220px;
   height: 62px;
+  border: 0;
   padding: 21px 31px;
   background: #5328A1;
   cursor: pointer;
@@ -696,6 +697,7 @@ ul {
   gap: 16px;
   width: 220px;
   height: 62px;
+  border: 0;
   padding: 21px 31px;
   background: #95390c;
   cursor: pointer;

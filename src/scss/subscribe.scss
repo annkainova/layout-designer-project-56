@@ -8,7 +8,7 @@
   margin-top: 45px;
 
   @media (max-width: 414px) {
-    margin-top: 45px;
+    margin-top: 50px;
   }
 
   &__card {
@@ -69,18 +69,21 @@
   background-image: url("..//images/subscribe_1.png");
   background-position: center;
   background-size: cover;
+  vertical-align: middle;
 }
 
 .bg-standart {
   background-image: url("..//images/subscribe_2.png");
   background-position: center;
   background-size: cover;
+  vertical-align: middle;
 }
 
 .bg-premium {
   background-image: url("..//images/subscribe_3.png");
   background-position: center;
   background-size: cover;
+  vertical-align: middle;
 }
 
 

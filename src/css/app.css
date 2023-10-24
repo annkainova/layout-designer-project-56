@@ -839,6 +839,9 @@ ul {
 }
 
 @media (max-width: 414px) {
+  .similar-artist-screen {
+    padding-bottom: 100px;
+  }
   .similar-artist {
     grid-template-columns: repeat(2, max-content);
   }

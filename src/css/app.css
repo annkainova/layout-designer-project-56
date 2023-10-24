@@ -793,6 +793,7 @@ ul {
 .album__img {
   max-width: 250px;
   max-height: 250px;
+  vertical-align: middle;
 }
 .album__info {
   margin-top: 18px;
@@ -830,7 +831,7 @@ ul {
   vertical-align: middle;
 }
 .similar-item__info {
-  margin-top: 16px;
+  margin-top: 18px;
 }
 .similar-item__name {
   text-transform: none;

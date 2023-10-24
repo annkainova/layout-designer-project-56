@@ -18,10 +18,12 @@
     max-width: 250px;
     max-height: 250px;
     border-radius: 100%;
+
+    vertical-align: middle;
   }
 
   &__info {
-    margin-top: 17px;
+    margin-top: 16px;
   }
 
   &__name {
@@ -34,10 +36,6 @@
 }
 
 @media (max-width:414px) {
-  .similar-artist-screen {
-    padding-bottom: 100px;
-  }
-
   .similar-artist {
     grid-template-columns: repeat(2, max-content);
   }
@@ -49,6 +47,8 @@
     &__img {
       max-width: 137px;
       max-height: 137px;
+
+      vertical-align: middle;
     }
   }
 }

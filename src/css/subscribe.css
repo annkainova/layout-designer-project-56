@@ -58,7 +58,7 @@
   background-repeat: no-repeat;
 }
 @media (max-width: 414px) {
-  .bg-free .bg-free {
+  .bg-free {
     background-position: top center;
   }
 }
@@ -70,7 +70,7 @@
   background-repeat: no-repeat;
 }
 @media (max-width: 414px) {
-  .bg-standart .bg-free {
+  .bg-standart {
     background-position: top center;
   }
 }
@@ -82,7 +82,7 @@
   background-repeat: no-repeat;
 }
 @media (max-width: 414px) {
-  .bg-premium .bg-free {
+  .bg-premium {
     background-position: top center;
   }
 }

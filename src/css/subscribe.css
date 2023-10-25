@@ -4,7 +4,7 @@
   grid-gap: 50px;
   margin-top: 45px;
 }
-@media all and (max-width: 414px) {
+@media (width <= 414px) {
   .subscribe {
     margin-top: 50px;
   }
@@ -21,7 +21,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-@media all and (max-width: 414px) {
+@media (width <= 414px) {
   .subscribe__name {
     padding-top: 14px;
     font-size: 16px;
@@ -57,7 +57,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media all and (max-width: 414px) {
+@media (width <= 414px) {
   .bg-free {
     background-position: top center;
   }

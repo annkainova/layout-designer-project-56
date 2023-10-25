@@ -36,7 +36,6 @@
     }
   }
 
-
   &__active {
     color: $white;
   }
@@ -45,7 +44,6 @@
     display: flex;
     align-items: center;
   }
-
 
   &__input {
     box-sizing: border-box;
@@ -59,7 +57,7 @@
 
     padding: 5px 0 5px 10px;
 
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13.3px;
@@ -72,7 +70,6 @@
       outline: none;
     }
   }
-
 }
 
 .logo {
@@ -92,9 +89,9 @@
     text-transform: uppercase;
   }
 }
+
 .first-screen {
   padding: 150px 0 200px;
-
 
   &__form {
     display: flex;
@@ -102,7 +99,6 @@
     gap: 24px;
 
     margin: 17px 0 24px;
-
   }
 
   &__input {
@@ -124,8 +120,8 @@
     color: $white;
   }
 }
-@media(width <=414px) {
 
+@media(width <=414px) {
   .header {
     display: block;
 
@@ -169,4 +165,3 @@
     }
   }
 }
-

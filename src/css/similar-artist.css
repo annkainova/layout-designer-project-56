@@ -24,7 +24,7 @@
   color: #e0e0e0;
 }
 
-@media all and (max-width: 414px) {
+@media (width <= 414px) {
   .similar-artist {
     grid-template-columns: repeat(2, max-content);
   }

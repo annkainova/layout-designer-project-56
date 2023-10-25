@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 600px auto;
 
-  @media all and (max-width:414px) {
+  @media (width <=414px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 15px
@@ -13,9 +13,9 @@
   &__text {
     margin-top: 16px;
 
-    @media all and (max-width:414px) {
+    @media (width <=414px) {
       grid-row: 2;
-      margin-top: 0px;
+      margin-top: 0;
     }
   }
 
@@ -34,8 +34,6 @@
     font-size: 12.8px;
     text-transform: none;
     color: $white;
-
-    @media all and (max-width:414px) {}
   }
 
 
@@ -43,8 +41,8 @@
     margin-left: 144px;
     justify-self: left;
 
-    @media all and (max-width:414px) {
-      margin-left: 0px;
+    @media (width <=414px) {
+      margin-left: 0;
       justify-self: center;
     }
   }

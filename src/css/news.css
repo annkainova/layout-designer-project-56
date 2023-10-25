@@ -33,7 +33,7 @@
   color: #cacaca;
   border: 1px solid #cacaca;
 }
-@media (max-width: 414px) {
+@media (width <= 414px) {
   .news__btn {
     margin-top: 45px;
   }
@@ -43,7 +43,8 @@
   margin-top: 65px;
   flex-direction: row-reverse;
 }
-@media (max-width: 414px) {
+
+@media (width <= 414px) {
   .news {
     display: block;
   }
@@ -63,13 +64,5 @@
   }
   .news .news__footer .news__data {
     font-size: 12.8px;
-  }
-}
-@media (max-width: 768px) {
-  .news__item {
-    display: block;
-  }
-  .news__text {
-    margin-top: 16px;
   }
 }

@@ -52,7 +52,7 @@
   margin-top: 16px;
 }
 
-@media all and (max-width: 414px) {
+@media (width <= 414px) {
   .first-screen-artist {
     padding: 55px 0 220px;
   }

@@ -80,7 +80,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media all and (max-width: 414px) {
+  @media (width <=414px) {
     background-position: top center;
   }
 }
@@ -91,7 +91,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media all and (max-width: 414px) {
+  @media (width <=414px) {
     background-position: top center;
   }
 }
@@ -106,26 +106,24 @@
   }
 }
 
-@media all and (max-width: 414px) {
-  .subscribe-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-row-gap: 50px;
-  }
-
-
-  .card-subscribe {
-    .card-name {
-      padding-top: 16px;
-
-      font-size: 16px;
-    }
-  }
-}
-
-@media all and (max-width: 768px) {
+@media (width <=414px) {
   .subscribe {
     display: grid;
     grid-template-columns: auto;
+
+    .subscribe-container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-row-gap: 50px;
+    }
+
+
+    .card-subscribe {
+      .card-name {
+        padding-top: 16px;
+
+        font-size: 16px;
+      }
+    }
   }
 }

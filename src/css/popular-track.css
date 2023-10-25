@@ -25,7 +25,7 @@
 .popular-track__artict-name {
   font-size: 12.8px;
   text-transform: uppercase;
-  color: #fff;
+  color: #FFFFFF;
 }
 .popular-track__music-name {
   font-size: 12.8px;
@@ -37,7 +37,7 @@
   color: #e0e0e0;
 }
 
-@media all and (max-width: 414px) {
+@media (width <= 414px) {
   .popular-track-screen__group {
     grid-template-columns: auto;
     gap: 25px;

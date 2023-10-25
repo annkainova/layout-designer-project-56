@@ -46,7 +46,7 @@
   }
 }
 
-@media all and (max-width:414px) {
+@media (width <=414px) {
   .popular-track-screen__group {
     grid-template-columns: auto;
     gap: 25px;

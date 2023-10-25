@@ -22,7 +22,7 @@
   color: #e0e0e0;
 }
 
-@media screen and (max-width: 414px) {
+@media (width <= 414px) {
   .album {
     max-width: 137px;
   }

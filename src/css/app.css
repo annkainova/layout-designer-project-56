@@ -629,7 +629,7 @@ ul {
     row-gap: 30px;
   }
 }
-@media (max-width: 414px) {
+@media (width <= 414px) {
   .nav-wrapper {
     display: grid;
     grid-template-columns: 1fr;

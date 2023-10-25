@@ -44,8 +44,6 @@
   background-image: url("..//images/Twitter.png");
 }
 
-
-
 .footer__menu {
   display: flex;
   flex-wrap: wrap;
@@ -63,7 +61,16 @@
   margin-top: 16px;
 }
 
-@media(width <=414px) {
+@media (width <=768px) {
+  .nav-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 30px;
+  }
+}
+
+@media (max-width:414px) {
   .nav-wrapper {
     display: grid;
     grid-template-columns: 1fr;
